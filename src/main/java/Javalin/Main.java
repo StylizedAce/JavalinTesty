@@ -16,7 +16,7 @@ public class Main {
 
         app.routes(() -> {
             path("/cakes", ()->{
-                get("/getAllCakes", CakesController::getAllCakes);
+                get("/", CakesController::getAllCakes);
                 get("/{specialCake}", CakesController::getSpecialCake);
                 post("/", CakesController::createNewCake);
 
