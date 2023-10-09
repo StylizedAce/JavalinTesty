@@ -1,3 +1,3 @@
 package Javalin;
 
-public record CakeDTO(String name) {}
+public record CakeDTO(String name, String description) { }
